@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Piadina del Borgo da Michela — Ronta (Cesena)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-page: #13110f;
+      --bg-card: #1a1714;
+      --bg-card-inner: #211d19;
+      --bg-olive-frame: #272913;
+      --border-olive: #5e6328;
+      --border-red: #8c2f27;
+      --accent-red: #c83228;
+      --accent-red-light: #e45b4f;
+      --accent-green: #2e7d47;
+      --accent-green-hover: #369354;
+      --text-main: #f6f1ea;
+      --text-muted: #cbc3b9;
+      --text-subtle: #9e968c;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --header-height: 68px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      min-height: 100vh;
+      padding-bottom: 88px;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* --- BANNER ANTEPRIMA & TENDINA --- */
+    .demo-banner {
+      background-color: #1c1916;
+      color: var(--text-muted);
+      text-align: center;
+      font-size: 12.5px;
+      padding: 8px 14px;
+      line-height: 1.35;
+    }
+
+    .awning-stripe {
+      height: 14px;
+      width: 100%;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--accent-red) 0px,
+        var(--accent-red) 24px,
+        #14110f 24px,
+        #14110f 48px
+      );
+    }
+
+    /* --- HEADER FISSO --- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background-color: rgba(19, 17, 15, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid var(--accent-red);
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 16px;
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand-logo-circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--accent-red);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .brand-logo-circle svg {
+      width: 24px;
+      height: 12px;
+      margin-bottom: 1px;
+    }
+
+    .brand-logo-circle span {
+      font-family: 'Fraunces', serif;
+      font-size: 9px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.2px;
+    }
+
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent-red-light);
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-subtitle {
+      font-size: 12.5px;
+      font-style: italic;
+      color: var(--text-main);
+      opacity: 0.9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cart-header-btn {
+      background-color: var(--accent-green);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-pill);
+      padding: 9px 15px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+
+    .cart-header-btn:hover {
+      background-color: var(--accent-green-hover);
+    }
+
+    .cart-header-btn.bump {
+      transform: scale(1.08);
+    }
+
+    /* --- HERO SECTION --- */
+    .hero {
+      padding: 22px 0 26px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .badge-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      padding: 11px 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .badge-action:hover,
+    .badge-action:active {
+      background-color: #25201c;
+      border-color: var(--accent-red-light);
+      transform: translateY(-1px);
+    }
+
+    .badge-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--accent-red-light);
+      flex-shrink: 0;
+    }
+
+    .status-dot.is-open {
+      background-color: #41c46c;
+      box-shadow: 0 0 8px rgba(65, 196, 108, 0.7);
+    }
+
+    .badge-arrow {
+      color: var(--accent-red-light);
+      font-size: 15px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(31px, 8.2vw, 42px);
+      font-weight: 800;
+      line-height: 1.13;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    .hero-title span {
+      color: var(--accent-red-light);
+    }
+
+    .hero-description {
+      font-size: 15.5px;
+      line-height: 1.55;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.99);
+    }
+
+    .btn-primary {
+      background-color: var(--accent-red);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: #d83a2f;
+    }
+
+    .btn-outline {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-red);
+    }
+
+    .btn-outline:hover {
+      background-color: #241f1b;
+      border-color: var(--accent-red-light);
+    }
+
+    /* --- SCHEDA LOGO DECORATIVA --- */
+    .brand-showcase {
+      border: 1px solid var(--border-red);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background-color: var(--bg-card);
+    }
+
+    .brand-showcase-body {
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .brand-emblem-large {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      background-color: var(--accent-red);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .brand-emblem-large svg {
+      width: 68px;
+      height: 30px;
+      margin-bottom: 2px;
+    }
+
+    .brand-emblem-large .emblem-main {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1;
+      transform: rotate(-4deg);
+    }
+
+    .brand-emblem-large .emblem-sub {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      margin-top: 3px;
+      opacity: 0.95;
+      transform: rotate(-4deg);
+    }
+
+    /* --- SEZIONE MENÙ --- */
+    .menu-section {
+      padding-top: 8px;
+      scroll-margin-top: calc(var(--header-height) + 12px);
+    }
+
+    .menu-intro {
+      text-align: center;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      padding: 0 6px;
+    }
+
+    .menu-frame {
+      background-color: var(--bg-olive-frame);
+      border: 2px solid var(--border-olive);
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .search-wrapper {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 48px;
+      padding: 0 42px 0 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-input::-webkit-search-cancel-button,
+    .search-input::-webkit-search-decoration {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-subtle);
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-red-light);
+    }
+
+    .search-clear {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: none;
+      background-color: #2b2622;
+      color: var(--text-main);
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-clear.visible {
+      display: flex;
+    }
+
+    .toggle-all-btn {
+      width: 100%;
+      min-height: 44px;
+      padding: 9px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 12px;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .toggle-all-btn:active {
+      background-color: #25201c;
+    }
+
+    /* Griglia ordinata a 2 colonne per le categorie */
+    .category-pills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .cat-pill {
+      min-height: 40px;
+      padding: 8px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .cat-pill.active {
+      background-color: var(--accent-red);
+      border-color: var(--accent-red);
+      color: #ffffff;
+    }
+
+    /* --- ACCORDION CATEGORIE --- */
+    .accordion-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .category-card {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-red);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .category-header {
+      width: 100%;
+      background: none;
+      border: none;
+      color: inherit;
+      text-align: left;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .category-header-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .category-title {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 700;
+      color: var(--accent-red-light);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .category-count {
+      display: inline-block;
+      padding: 4px 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-red);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .category-note {
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--text-muted);
+    }
+
+    .category-chevron {
+      color: var(--accent-red-light);
+      font-size: 15px;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .category-card.open .category-chevron {
+      transform: rotate(180deg);
+    }
+
+    .category-items {
+      display: none;
+      padding: 12px;
+      border-top: 1px solid rgba(140, 47, 39, 0.45);
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .category-card.open .category-items {
+      display: flex;
+    }
+
+    /* --- CARD SINGOLO PIATTO --- */
+    .dish-card {
+      background-color: var(--bg-card);
+      border: 1px solid rgba(140, 47, 39, 0.55);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .dish-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .dish-name {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .dish-desc {
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--text-muted);
+    }
+
+    .dish-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .dish-price {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--accent-red-light);
+      white-space: nowrap;
+    }
+
+    .add-dish-btn {
+      background-color: var(--accent-green);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      min-height: 38px;
+      padding: 8px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+
+    .add-dish-btn:hover {
+      background-color: var(--accent-green-hover);
+    }
+
+    .add-dish-btn:active {
+      transform: scale(0.96);
+    }
+
+    .empty-search {
+      text-align: center;
+      padding: 24px 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+      display: none;
+    }
+
+    /* --- SEZIONI INFO: ORARI & CONTATTI --- */
+    .info-section {
+      margin-top: 22px;
+      scroll-margin-top: calc(var(--header-height) + 14px);
+    }
+
+    .info-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-red);
+      border-radius: var(--radius-lg);
+      padding: 20px 16px;
+    }
+
+    .section-heading {
+      font-family: 'Fraunces', serif;
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--accent-red-light);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .hours-table td {
+      padding: 11px 4px;
+      font-size: 15px;
+    }
+
+    .hours-table td:first-child {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .hours-table td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .hours-table tr.today-row td {
+      color: var(--accent-red-light);
+    }
+
+    .hours-note {
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+
+    /* --- DOVE SIAMO E RECAPITI --- */
+    .address-block {
+      margin-bottom: 16px;
+    }
+
+    .place-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .place-street {
+      font-size: 15.5px;
+      line-height: 1.45;
+      color: var(--text-main);
+    }
+
+    .place-landmark {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .contact-phone-box {
+      margin: 18px 0 14px;
+    }
+
+    .contact-label {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-phone-link {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent-red-light);
+      text-decoration: none;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .service-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 40px;
+      padding: 8px 10px;
+      border-radius: 9px;
+      border: 1px solid rgba(140, 47, 39, 0.65);
+      background-color: var(--bg-page);
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .service-badge:last-child:nth-child(odd) {
+      grid-column: span 2;
+    }
+
+    /* --- FOOTER --- */
+    .site-footer {
+      margin-top: 28px;
+      border-top: 2px solid var(--accent-red);
+      padding: 20px 16px 28px;
+      text-align: center;
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    /* --- BARRA CARRELLO FISSA IN BASSO --- */
+    .floating-cart-bar {
+      position: fixed;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%) translateY(130%);
+      width: calc(100% - 28px);
+      max-width: 648px;
+      background-color: var(--accent-green);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: inherit;
+      font-size: 15.5px;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+      cursor: pointer;
+      z-index: 95;
+      transition: transform 0.25s ease;
+    }
+
+    .floating-cart-bar.visible {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* --- MODALE CARRELLO & WHATSAPP --- */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.78);
+      z-index: 110;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    @media (min-width: 640px) {
+      .modal-backdrop {
+        align-items: center;
+        padding: 16px;
+      }
+    }
+
+    .modal-sheet {
+      width: 100%;
+      max-width: 560px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-red);
+      border-radius: 20px 20px 0 0;
+      padding: 20px 16px 24px;
+    }
+
+    @media (min-width: 640px) {
+      .modal-sheet {
+        border-radius: 20px;
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-title {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      color: var(--accent-red-light);
+    }
+
+    .modal-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .clear-cart-btn {
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--text-muted);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: 12.5px;
+      cursor: pointer;
+    }
+
+    .modal-close {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .cart-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .cart-row {
+      background-color: var(--bg-page);
+      border: 1px solid rgba(140, 47, 39, 0.5);
+      border-radius: var(--radius-md);
+      padding: 12px;
+    }
+
+    .cart-row-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .cart-row-name {
+      font-size: 15.5px;
+      font-weight: 700;
+    }
+
+    .cart-row-price {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--accent-red-light);
+      white-space: nowrap;
+    }
+
+    .cart-row-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .dough-select {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-red);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: 13.5px;
+    }
+
+    .qty-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qty-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .cart-form-group {
+      margin-bottom: 12px;
+    }
+
+    .cart-form-group label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .cart-input {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border-red);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    .cart-total-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 12px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      margin-bottom: 12px;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #0d1f12;
+      font-weight: 800;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #2ce070;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-banner">
+    Anteprima dimostrativa realizzata per Piadina del Borgo da Michela — Non indicizzata
+  </div>
+  <div class="awning-stripe"></div>
+
+  <!-- HEADER FISSO -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand-link">
+        <div class="brand-logo-circle" aria-hidden="true">
+          <svg viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="3">
+            <path d="M4 26V12L14 4L24 12V26M22 26V12L32 4L42 12V26M40 26V12L50 4L60 12V26" />
+          </svg>
+          <span>piadina</span>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">Piadina del Borgo</div>
+          <div class="brand-subtitle">da Michela • Ronta (Cesena)</div>
+        </div>
+      </a>
+
+      <button type="button" id="headerCartBtn" class="cart-header-btn">
+        Ordine ( <span id="headerCartCount">0</span> )
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badges">
+        <!-- Riconoscimento Gambero Rosso cliccabile -->
+        <a
+          href="https://www.gamberorosso.it/?s=Piadina+del+Borgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="badge-action"
+        >
+          <span class="badge-left">
+            <span>★ Guida Street Food Gambero Rosso</span>
+          </span>
+          <span class="badge-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Pulsante Orari che porta direttamente alla tabella #orari -->
+        <a href="#orari" class="badge-action">
+          <span class="badge-left">
+            <span id="liveStatusDot" class="status-dot"></span>
+            <span id="liveStatusText">Chiuso ora • Vedi orari</span>
+          </span>
+          <span class="badge-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <h1 class="hero-title">
+        La vera <span>piadina romagnola</span>, stesa e cotta al momento.
+      </h1>
+
+      <p class="hero-description">
+        Dal 2023 a Ronta di Cesena: apri le categorie del menù, aggiungi al carrello quello che preferisci con eventuali note e invia l'ordine su WhatsApp in un attimo.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Scegli dal Menù</a>
+        <a href="tel:+393758304161" class="btn btn-outline">Chiama: 375 830 4161</a>
+      </div>
+
+      <div class="brand-showcase" aria-hidden="true">
+        <div class="awning-stripe"></div>
+        <div class="brand-showcase-body">
+          <div class="brand-emblem-large">
+            <svg viewBox="0 0 64 28" fill="none" stroke="currentColor" stroke-width="2.8">
+              <path d="M4 26V12L14 4L24 12V26M22 26V12L32 4L42 12V26M40 26V12L50 4L60 12V26" />
+              <rect x="11" y="15" width="6" height="6" />
+              <rect x="29" y="15" width="6" height="6" />
+              <rect x="47" y="15" width="6" height="6" />
+            </svg>
+            <div class="emblem-main">piadina</div>
+            <div class="emblem-sub">DEL BORGO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENÙ -->
+    <section id="menu" class="menu-section">
+      <p class="menu-intro">
+        Tocca una categoria per aprire la tendina dei piatti, oppure cerca un ingrediente qui sotto.
+      </p>
+
+      <div class="menu-frame">
+        <div class="search-wrapper">
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Cerca piatto o ingrediente..."
+            autocomplete="off"
+          />
+          <button type="button" id="searchClearBtn" class="search-clear" aria-label="Cancella ricerca">✕</button>
+        </div>
+
+        <button type="button" id="toggleAllBtn" class="toggle-all-btn">
+          Apri tutto il menù ▾
+        </button>
+
+        <div id="categoryPills" class="category-pills"></div>
+
+        <div id="accordionList" class="accordion-list"></div>
+        <div id="emptySearch" class="empty-search">
+          Nessun piatto trovato per la tua ricerca. Prova con un altro ingrediente.
+        </div>
+      </div>
+    </section>
+
+    <!-- ORARI DI APERTURA -->
+    <section id="orari" class="info-section">
+      <div class="info-card">
+        <h2 class="section-heading">Orari di apertura</h2>
+
+        <table class="hours-table">
+          <tbody>
+            <tr data-day="1">
+              <td>Lunedì</td>
+              <td>Chiuso</td>
+            </tr>
+            <tr data-day="2">
+              <td>Martedì</td>
+              <td>16:30–20:30</td>
+            </tr>
+            <tr data-day="3">
+              <td>Mercoledì</td>
+              <td>16:30–20:30</td>
+            </tr>
+            <tr data-day="4">
+              <td>Giovedì</td>
+              <td>16:30–20:30</td>
+            </tr>
+            <tr data-day="5">
+              <td>Venerdì</td>
+              <td>16:30–20:30</td>
+            </tr>
+            <tr data-day="6">
+              <td>Sabato</td>
+              <td>16:30–20:30</td>
+            </tr>
+            <tr data-day="0">
+              <td>Domenica</td>
+              <td>16:30–20:30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="hours-note">
+          * Gli orari possono variare tra stagione estiva e invernale: segui Instagram per gli aggiornamenti in tempo reale.
+        </p>
+      </div>
+    </section>
+
+    <!-- DOVE SIAMO E RECAPITI (SENZA FACEBOOK) -->
+    <section id="contatti" class="info-section">
+      <div class="info-card">
+        <h2 class="section-heading">Dove siamo e Recapiti</h2>
+
+        <div class="address-block">
+          <div class="place-name">Piadina del Borgo da Michela</div>
+          <div class="place-street">
+            Via Ravennate, 4120 — Borgo di Ronta<br />
+            47522 Cesena (FC)
+          </div>
+          <div class="place-landmark">(c/o ingresso parcheggio Games Village Park)</div>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Piadina+del+Borgo+da+Michela+Via+Ravennate+4120+Cesena"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Avvia il navigatore (Maps)
+        </a>
+
+        <div class="contact-phone-box">
+          <div class="contact-label">Telefono &amp; WhatsApp:</div>
+          <a href="tel:+393758304161" class="contact-phone-link">375 830 4161</a>
+        </div>
+
+        <a
+          href="https://www.instagram.com/piadinadelborgoronta/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          Instagram (@piadinadelborgoronta)
+        </a>
+
+        <div class="services-grid">
+          <div class="service-badge">Asporto rapido</div>
+          <div class="service-badge">Tavoli all'aperto</div>
+          <div class="service-badge">Parcheggio gratuito</div>
+          <div class="service-badge">Carte &amp; Bancomat</div>
+          <div class="service-badge">Cani ammessi</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER PULITO -->
+  <footer class="site-footer">
+    Piadina del Borgo da Michela — Via Ravennate, 4120, 47522 Ronta, Cesena (FC)<br />
+    Tel. 375 830 4161
+  </footer>
+
+  <!-- BARRA FLOTTANTE CARRELLO -->
+  <button type="button" id="floatingCartBar" class="floating-cart-bar">
+    <span id="floatingCartLabel">Vedi il tuo ordine (1)</span>
+    <span id="floatingCartTotal">0,00 €</span>
+  </button>
+
+  <!-- MODALE CARRELLO WHATSAPP -->
+  <div id="cartModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 id="modalTitle" class="modal-title">Il tuo ordine</h3>
+        <div class="modal-header-actions">
+          <button type="button" id="clearCartBtn" class="clear-cart-btn">Svuota</button>
+          <button type="button" id="closeModalBtn" class="modal-close" aria-label="Chiudi">✕</button>
+        </div>
+      </div>
+
+      <div id="cartItemsList" class="cart-items-list"></div>
+
+      <div id="cartCheckoutFields">
+        <div class="cart-form-group">
+          <label for="customerName">Il tuo nome</label>
+          <input type="text" id="customerName" class="cart-input" placeholder="Es. Marco" />
+        </div>
+
+        <div class="cart-form-group">
+          <label for="pickupTime">Orario indicativo di ritiro</label>
+          <input type="text" id="pickupTime" class="cart-input" placeholder="Es. 19:30" />
+        </div>
+
+        <div class="cart-form-group">
+          <label for="orderNotes">Note aggiuntive (opzionale)</label>
+          <input type="text" id="orderNotes" class="cart-input" placeholder="Es. piadina ben cotta, senza rucola..." />
+        </div>
+
+        <div class="cart-total-row">
+          <span>Totale stimato</span>
+          <span id="modalTotalAmount">0,00 €</span>
+        </div>
+
+        <button type="button" id="sendWhatsappBtn" class="btn btn-whatsapp">
+          Invia ordine su WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const WHATSAPP_NUMBER = "393758304161";
+    const STORAGE_KEY = "piadina_borgo_cart_v1";
+
+    const MENU_DATA = [
+      {
+        id: "piadine",
+        filterLabel: "Piadine",
+        title: "Le Piadine & Piadine Farcite",
+        note: "Impasto tradizionale, integrale (+0,50€) o senza lattosio",
+        allowDoughChoice: true,
+        items: [
+          { name: "Piadina tradizionale", desc: "Impasto classico della tradizione romagnola", price: 1.00 },
+          { name: "Piadina all'olio di oliva", desc: "Con farina macinata a pietra (senza lattosio)", price: 1.50, allowDoughChoice: false },
+          { name: "Prosciutto crudo", desc: "Farcitura classica al prosciutto crudo", price: 4.50 },
+          { name: "Crudo, squacquerone e rucola", desc: "Il grande classico romagnolo", price: 5.50 },
+          { name: "Crudo, pecorino e melanzane", desc: "Prosciutto crudo, pecorino e melanzane", price: 5.50 },
+          { name: "Crudo, squacquerone e fichi caramellati", desc: "Abbinamento dolce-salato della tradizione", price: 5.50 },
+          { name: "Prosciutto cotto", desc: "Farcitura semplice con prosciutto cotto", price: 4.00 },
+          { name: "Cotto e mozzarella", desc: "Prosciutto cotto e mozzarella filante", price: 4.50 },
+          { name: "Cotto, fontina e funghi", desc: "Prosciutto cotto, fontina e funghi trifolati", price: 5.00 },
+          { name: "Salame nostrano", desc: "Farcitura con salame tradizionale romagnolo", price: 4.00 },
+          { name: "Salame e pecorino", desc: "Salame nostrano e pecorino stagionato", price: 4.50 },
+          { name: "Salame, squacquerone e rucola", desc: "Salame, squacquerone fresco e rucola", price: 5.00 },
+          { name: "Coppa di testa", desc: "Salume della tradizione locale", price: 4.00 },
+          { name: "Coppa stagionata e squacquerone", desc: "Coppa nostrana e squacquerone cremoso", price: 5.00 },
+          { name: "Speck", desc: "Farcitura con speck dell'Alto Adige", price: 4.50 },
+          { name: "Speck e brie", desc: "Speck affumicato e formaggio brie", price: 5.00 },
+          { name: "Speck, brie e noci", desc: "Speck, brie morbido e gherigli di noce", price: 5.50 },
+          { name: "Speck, gorgonzola e rucola", desc: "Gusto deciso con gorgonzola dolce e rucola", price: 5.50 },
+          { name: "Bresaola", desc: "Farcitura leggera con bresaola", price: 4.50 },
+          { name: "Bresaola, rucola e grana", desc: "Bresaola, rucola fresca e scaglie di grana", price: 5.50 },
+          { name: "Bresaola, squacquerone e rucola", desc: "Bresaola, squacquerone e rucola", price: 5.50 },
+          { name: "Porchetta artigianale", desc: "Porchetta calda affettata al momento", price: 4.50 },
+          { name: "Porchetta, scamorza e cipolla", desc: "Porchetta, scamorza affumicata e cipolla stufata", price: 5.50 },
+          { name: "Salsiccia e cipolla", desc: "Salsiccia romagnola alla piastra e cipolla", price: 5.00 },
+          { name: "Salsiccia, scamorza e peperoni", desc: "Salsiccia, scamorza e peperoni grigliati", price: 5.50 },
+          { name: "Salsiccia e verdure grigliate", desc: "Salsiccia alla piastra con mix di verdure", price: 5.50 },
+          { name: "Squacquerone e rucola", desc: "Vegetariana classica romagnola", price: 4.50 },
+          { name: "Mozzarella e pomodoro", desc: "Mozzarella fiordilatte, pomodoro fresco e origano", price: 4.00 },
+          { name: "Verdure grigliate e scamorza", desc: "Zucchine, melanzane, peperoni e scamorza", price: 5.00 },
+          { name: "Melanzane, pecorino e noci", desc: "Melanzane grigliate, pecorino e noci", price: 5.00 },
+          { name: "Gorgonzola, noci e radicchio", desc: "Gorgonzola cremoso, noci e radicchio", price: 5.00 },
+          { name: "Tonno, mozzarella e pomodoro", desc: "Tonno sott'olio, mozzarella e pomodoro", price: 5.00 },
+          { name: "Tonno, cipolla e maionese", desc: "Tonno, cipolla fresca e maionese", price: 4.50 },
+          { name: "Tacchino, fontina e insalata", desc: "Fesa di tacchino arrosto, fontina e insalata", price: 5.00 }
+        ]
+      },
+      {
+        id: "crescioni",
+        filterLabel: "Crescioni",
+        title: "I Crescioni Classici",
+        note: "Chiusi a mano e dorati alla piastra • 4,00€ – 5,00€",
+        allowDoughChoice: true,
+        items: [
+          { name: "Erbe di campagna", desc: "Ripieno tradizionale romagnolo con erbette", price: 4.00 },
+          { name: "Erbe e mozzarella", desc: "Erbette di campagna e mozzarella filante", price: 4.50 },
+          { name: "Erbe e squacquerone", desc: "Erbette di campagna e squacquerone", price: 4.50 },
+          { name: "Erbe, salsiccia e mozzarella", desc: "Erbette, salsiccia romagnola e mozzarella", price: 5.00 },
+          { name: "Pomodoro e mozzarella", desc: "Il classico rosso con mozzarella filante", price: 4.00 },
+          { name: "Pomodoro, mozzarella e prosciutto cotto", desc: "Ripieno classico prosciutto e formaggio", price: 4.50 },
+          { name: "Pomodoro, mozzarella e salame piccante", desc: "Gusto deciso stile diavola", price: 4.50 },
+          { name: "Pomodoro, mozzarella e funghi", desc: "Salsa di pomodoro, mozzarella e funghi", price: 4.50 },
+          { name: "Pomodoro, mozzarella e salsiccia", desc: "Pomodoro, mozzarella e salsiccia", price: 5.00 },
+          { name: "Pomodoro, mozzarella e würstel", desc: "Classico amato anche dai più piccoli", price: 4.50 },
+          { name: "Pomodoro, mozzarella, prosciutto e funghi", desc: "Ripieno ricco prosciutto cotto e funghi", price: 5.00 },
+          { name: "Pomodoro, mozzarella, tonno e cipolla", desc: "Salsa di pomodoro, tonno e cipolla", price: 5.00 },
+          { name: "Patate e mozzarella", desc: "Patate lesse condite e mozzarella", price: 4.00 },
+          { name: "Patate e salsiccia", desc: "Patate condite e salsiccia romagnola", price: 4.50 },
+          { name: "Patate, salsiccia e mozzarella", desc: "Uno dei ripieni più richiesti", price: 5.00 },
+          { name: "Patate, pancetta e scamorza", desc: "Patate condite, pancetta rosolata e scamorza", price: 5.00 },
+          { name: "Zucca e patate", desc: "Crema di zucca dolce e patate", price: 4.00 },
+          { name: "Zucca, patate e mozzarella", desc: "Zucca, patate e mozzarella filante", price: 4.50 },
+          { name: "Zucca, patate e salsiccia", desc: "Zucca dolce, patate e salsiccia", price: 5.00 },
+          { name: "Zucca, patate, speck e scamorza", desc: "Abbinamento autunnale saporito", price: 5.00 },
+          { name: "Prosciutto cotto e mozzarella", desc: "Ripieno bianco semplice e filante", price: 4.50 },
+          { name: "Prosciutto crudo e mozzarella", desc: "Prosciutto crudo e mozzarella", price: 4.50 },
+          { name: "Squacquerone e rucola", desc: "Ripieno bianco cremoso con rucola", price: 4.50 },
+          { name: "Quattro formaggi", desc: "Mix cremoso di formaggi fusi", price: 5.00 },
+          { name: "Gorgonzola e noci", desc: "Gorgonzola dolce e gherigli di noce", price: 4.50 },
+          { name: "Radicchio e scamorza", desc: "Radicchio saltato e scamorza affumicata", price: 4.50 },
+          { name: "Radicchio, salsiccia e mozzarella", desc: "Radicchio, salsiccia e mozzarella", price: 5.00 },
+          { name: "Melanzane e mozzarella", desc: "Melanzane grigliate e mozzarella", price: 4.50 },
+          { name: "Verdure miste e mozzarella", desc: "Verdure di stagione e mozzarella", price: 4.50 },
+          { name: "Friarielli e salsiccia", desc: "Cime di rapa saltate e salsiccia", price: 5.00 },
+          { name: "Friarielli, salsiccia e scamorza", desc: "Friarielli, salsiccia e scamorza affumicata", price: 5.00 },
+          { name: "Porchetta e patate", desc: "Porchetta arrosto e patate condite", price: 5.00 }
+        ]
+      },
+      {
+        id: "crescioni-sfiziosi",
+        filterLabel: "Crescioni Sfiziosi",
+        title: "I Crescioni Sfiziosi",
+        note: "Le 8 creazioni speciali della casa — Tutti a 5,00 €",
+        allowDoughChoice: true,
+        items: [
+          { name: "Il Contadino", desc: "Erbe di campagna, salsiccia, patate e pecorino", price: 5.00 },
+          { name: "Il Goloso", desc: "Patate, pancetta croccante, scamorza e cipolla stufata", price: 5.00 },
+          { name: "Il Bosco", desc: "Funghi trifolati, speck, brie e noci", price: 5.00 },
+          { name: "Il Delicato", desc: "Zucca, squacquerone, prosciutto crudo e noci", price: 5.00 },
+          { name: "Il Rustico", desc: "Porchetta, melanzane grigliate e scamorza affumicata", price: 5.00 },
+          { name: "Il Romagnolo", desc: "Squacquerone, prosciutto crudo, rucola e fichi caramellati", price: 5.00 },
+          { name: "Il Piccante", desc: "Pomodoro, mozzarella, salame piccante, peperoni e gorgonzola", price: 5.00 },
+          { name: "L'Ortolano", desc: "Verdure grigliate, squacquerone, pomodorini e olive", price: 5.00 }
+        ]
+      },
+      {
+        id: "piadipizze",
+        filterLabel: "PiadiPizze & Patatine",
+        title: "PiadiPizze & Patatine",
+        note: "Base di piadina croccante farcita e gratinata al momento",
+        allowDoughChoice: false,
+        items: [
+          { name: "PiadiPizza Margherita", desc: "Pomodoro, mozzarella fiordilatte e origano", price: 4.50 },
+          { name: "PiadiPizza Prosciutto e Funghi", desc: "Pomodoro, mozzarella, prosciutto cotto e funghi", price: 5.50 },
+          { name: "PiadiPizza Diavola", desc: "Pomodoro, mozzarella e salame piccante", price: 5.50 },
+          { name: "PiadiPizza Salsiccia e Cipolla", desc: "Pomodoro, mozzarella, salsiccia e cipolla", price: 5.50 },
+          { name: "PiadiPizza 4 Formaggi", desc: "Mozzarella, gorgonzola, fontina e grana", price: 6.00 },
+          { name: "PiadiPizza Würstel e Patatine", desc: "Pomodoro, mozzarella, würstel e patatine fritte", price: 6.00 },
+          { name: "Porzione Patatine Fritte", desc: "Patatine dorate croccanti servite calde", price: 3.50 }
+        ]
+      },
+      {
+        id: "rotoli",
+        filterLabel: "Rotoli di Piada",
+        title: "Rotoli di Piada",
+        note: "Piadina sottile arrotolata, pratica e ricca di gusto",
+        allowDoughChoice: true,
+        items: [
+          { name: "Rotolo Classico", desc: "Prosciutto crudo, squacquerone e rucola", price: 5.50 },
+          { name: "Rotolo Cotto e Fontina", desc: "Prosciutto cotto, fontina, insalata e maionese", price: 5.00 },
+          { name: "Rotolo Tacchino Light", desc: "Fesa di tacchino, mozzarella, pomodoro e insalata", price: 5.50 },
+          { name: "Rotolo Tonno e Insalata", desc: "Tonno, pomodorini, insalata verde e salsa rosa", price: 5.50 },
+          { name: "Rotolo Vegetariano", desc: "Verdure grigliate, squacquerone e rucola", price: 5.50 }
+        ]
+      },
+      {
+        id: "rotoli-speciali",
+        filterLabel: "Rotoli Speciali",
+        title: "Rotoli Speciali",
+        note: "Abbinamenti gourmet arrotolati nella piada calda",
+        allowDoughChoice: true,
+        items: [
+          { name: "Rotolo del Borgo", desc: "Porchetta, patate al forno, scamorza e salsa boscaiola", price: 6.50 },
+          { name: "Rotolo Montanaro", desc: "Speck, brie, funghi trifolati e rucola", price: 6.50 },
+          { name: "Rotolo Valtellina", desc: "Bresaola, squacquerone, rucola, grana e glassa balsamica", price: 6.50 },
+          { name: "Rotolo Croccante", desc: "Cotoletta di pollo, insalata, pomodoro e maionese", price: 6.50 }
+        ]
+      },
+      {
+        id: "dolci",
+        filterLabel: "I Dolci",
+        title: "I Dolci",
+        note: "Piadine e crescioni dolci caldi per chiudere in bellezza",
+        allowDoughChoice: false,
+        items: [
+          { name: "Piadina alla Nutella", desc: "Piadina calda spalmata con abbondante Nutella", price: 3.50 },
+          { name: "Piadina Nutella e Granella di Nocciole", desc: "Nutella cremosa e granella croccante di nocciole", price: 4.00 },
+          { name: "Piadina Nutella e Cocco", desc: "Nutella e scaglie di cocco rapè", price: 4.00 },
+          { name: "Crescione alla Nutella", desc: "Crescione caldo ripieno di Nutella", price: 4.00 },
+          { name: "Crescione Mascarpone e Nutella", desc: "Crema al mascarpone e Nutella", price: 4.50 }
+        ]
+      }
+    ];
+
+    const state = {
+      activeFilter: "all",
+      searchQuery: "",
+      openCategories: new Set(),
+      cart: []
+    };
+
+    const formatEuro = (val) => val.toFixed(2).replace(".", ",") + " €";
+
+    function loadSavedCart() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            state.cart = parsed;
+          }
+        }
+      } catch (e) {
+        // Ignora errori storage in navigazione privata o file locale
+      }
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state.cart));
+      } catch (e) {
+        // Ignora errori storage
+      }
+    }
+
+    function updateLiveStatus() {
+      const now = new Date();
+      const day = now.getDay(); // 0 = Dom, 1 = Lun, ..., 6 = Sab
+      const minutes = now.getHours() * 60 + now.getMinutes();
+
+      document.querySelectorAll(".hours-table tr").forEach((row) => {
+        row.classList.toggle("today-row", Number(row.dataset.day) === day);
+      });
+
+      const isOpen = day !== 1 && minutes >= 16 * 60 + 30 && minutes < 20 * 60 + 30;
+      const dot = document.getElementById("liveStatusDot");
+      const text = document.getElementById("liveStatusText");
+
+      if (isOpen) {
+        dot.classList.add("is-open");
+        text.textContent = "Aperto ora • Vedi orari";
+      } else {
+        dot.classList.remove("is-open");
+        text.textContent = "Chiuso ora • Vedi orari";
+      }
+    }
+
+    function getVisibleCategories() {
+      const query = state.searchQuery.trim().toLowerCase();
+      return MENU_DATA.map((cat) => {
+        if (state.activeFilter !== "all" && cat.id !== state.activeFilter) {
+          return null;
+        }
+        const filteredItems = cat.items.filter((item) => {
+          if (!query) return true;
+          return (
+            item.name.toLowerCase().includes(query) ||
+            item.desc.toLowerCase().includes(query) ||
+            cat.title.toLowerCase().includes(query)
+          );
+        });
+        if (filteredItems.length === 0) return null;
+        return { ...cat, filteredItems };
+      }).filter(Boolean);
+    }
+
+    function syncToggleAllButton(visibleCategories) {
+      const toggleAllBtn = document.getElementById("toggleAllBtn");
+      const query = state.searchQuery.trim();
+
+      if (visibleCategories.length === 0) {
+        toggleAllBtn.textContent = "Apri tutto il menù ▾";
+        toggleAllBtn.dataset.mode = "open";
+        return;
+      }
+
+      const allCurrentlyOpen =
+        Boolean(query) ||
+        visibleCategories.every((cat) => state.openCategories.has(cat.id));
+
+      if (allCurrentlyOpen) {
+        toggleAllBtn.textContent = "Chiudi tutto il menù ▴";
+        toggleAllBtn.dataset.mode = "close";
+      } else {
+        toggleAllBtn.textContent = "Apri tutto il menù ▾";
+        toggleAllBtn.dataset.mode = "open";
+      }
+    }
+
+    function renderCategoryPills() {
+      const container = document.getElementById("categoryPills");
+      const pills = [
+        { id: "all", label: "Tutte le categorie" },
+        ...MENU_DATA.map((cat) => ({ id: cat.id, label: cat.filterLabel }))
+      ];
+
+      container.innerHTML = pills
+        .map(
+          (p) => `
+          <button
+            type="button"
+            class="cat-pill ${state.activeFilter === p.id ? "active" : ""}"
+            data-filter="${p.id}"
+          >
+            ${p.label}
+          </button>
+        `
+        )
+        .join("");
+
+      container.querySelectorAll(".cat-pill").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.activeFilter = btn.dataset.filter;
+          if (state.activeFilter !== "all") {
+            state.openCategories.add(state.activeFilter);
+          }
+          renderCategoryPills();
+          renderMenu();
+        });
+      });
+    }
+
+    function renderMenu() {
+      const listEl = document.getElementById("accordionList");
+      const emptyEl = document.getElementById("emptySearch");
+      const query = state.searchQuery.trim();
+      const visibleCategories = getVisibleCategories();
+
+      let html = "";
+
+      visibleCategories.forEach((cat) => {
+        const shouldOpen = Boolean(query) || state.openCategories.has(cat.id);
+        const countLabel =
+          cat.filteredItems.length === 1
+            ? "1 proposta"
+            : `${cat.filteredItems.length} proposte`;
+
+        html += `
+          <article class="category-card ${shouldOpen ? "open" : ""}" data-cat-id="${cat.id}">
+            <button type="button" class="category-header" aria-expanded="${shouldOpen}">
+              <div class="category-header-info">
+                <h3 class="category-title">${cat.title}</h3>
+                <span class="category-count">${countLabel}</span>
+                <p class="category-note">${cat.note}</p>
+              </div>
+              <span class="category-chevron" aria-hidden="true">▼</span>
+            </button>
+
+            <div class="category-items">
+              ${cat.filteredItems
+                .map((item) => {
+                  const canChooseDough =
+                    typeof item.allowDoughChoice === "boolean"
+                      ? item.allowDoughChoice
+                      : cat.allowDoughChoice;
+                  return `
+                  <div class="dish-card">
+                    <div class="dish-info">
+                      <h4 class="dish-name">${item.name}</h4>
+                      <p class="dish-desc">${item.desc}</p>
+                    </div>
+                    <div class="dish-actions">
+                      <span class="dish-price">${formatEuro(item.price)}</span>
+                      <button
+                        type="button"
+                        class="add-dish-btn"
+                        data-name="${item.name.replace(/"/g, "&quot;")}"
+                        data-price="${item.price}"
+                        data-dough="${canChooseDough}"
+                      >
+                        + Aggiungi
+                      </button>
+                    </div>
+                  </div>
+                `;
+                })
+                .join("")}
+            </div>
+          </article>
+        `;
+      });
+
+      listEl.innerHTML = html;
+      emptyEl.style.display = visibleCategories.length === 0 ? "block" : "none";
+      syncToggleAllButton(visibleCategories);
+
+      listEl.querySelectorAll(".category-header").forEach((headerBtn) => {
+        headerBtn.addEventListener("click", () => {
+          const card = headerBtn.closest(".category-card");
+          const catId = card.dataset.catId;
+          const isNowOpen = !card.classList.contains("open");
+
+          card.classList.toggle("open", isNowOpen);
+          headerBtn.setAttribute("aria-expanded", String(isNowOpen));
+
+          if (isNowOpen) {
+            state.openCategories.add(catId);
+          } else {
+            state.openCategories.delete(catId);
+          }
+
+          syncToggleAllButton(getVisibleCategories());
+        });
+      });
+
+      listEl.querySelectorAll(".add-dish-btn").forEach((addBtn) => {
+        addBtn.addEventListener("click", () => {
+          addToCart({
+            name: addBtn.dataset.name,
+            basePrice: parseFloat(addBtn.dataset.price),
+            allowDoughChoice: addBtn.dataset.dough === "true"
+          });
+        });
+      });
+    }
+
+    function addToCart({ name, basePrice, allowDoughChoice }) {
+      const existing = state.cart.find(
+        (item) => item.name === name && item.dough === "Tradizionale"
+      );
+
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        state.cart.push({
+          uid: Date.now() + Math.random(),
+          name,
+          basePrice,
+          allowDoughChoice,
+          dough: "Tradizionale",
+          qty: 1
+        });
+      }
+
+      saveCart();
+      updateCartIndicators();
+
+      const headerBtn = document.getElementById("headerCartBtn");
+      headerBtn.classList.remove("bump");
+      void headerBtn.offsetWidth;
+      headerBtn.classList.add("bump");
+    }
+
+    function getCartTotals() {
+      let count = 0;
+      let total = 0;
+      state.cart.forEach((item) => {
+        const extra = item.dough === "Integrale (+0,50€)" ? 0.5 : 0;
+        count += item.qty;
+        total += (item.basePrice + extra) * item.qty;
+      });
+      return { count, total };
+    }
+
+    function updateCartIndicators() {
+      const { count, total } = getCartTotals();
+      document.getElementById("headerCartCount").textContent = count;
+
+      const floatingBar = document.getElementById("floatingCartBar");
+      if (count > 0) {
+        document.getElementById("floatingCartLabel").textContent =
+          count === 1 ? "Vedi il tuo ordine (1 articolo)" : `Vedi il tuo ordine (${count} articoli)`;
+        document.getElementById("floatingCartTotal").textContent = formatEuro(total);
+        floatingBar.classList.add("visible");
+      } else {
+        floatingBar.classList.remove("visible");
+      }
+    }
+
+    function renderCartModal() {
+      const listEl = document.getElementById("cartItemsList");
+      const checkoutEl = document.getElementById("cartCheckoutFields");
+      const clearBtn = document.getElementById("clearCartBtn");
+
+      if (state.cart.length === 0) {
+        listEl.innerHTML =
+          '<p style="text-align:center; color: var(--text-muted); padding: 18px 0;">Il tuo carrello è vuoto. Scegli qualcosa dal menù!</p>';
+        checkoutEl.style.display = "none";
+        clearBtn.style.display = "none";
+        return;
+      }
+
+      checkoutEl.style.display = "block";
+      clearBtn.style.display = "inline-block";
+
+      listEl.innerHTML = state.cart
+        .map((item, idx) => {
+          const extra = item.dough === "Integrale (+0,50€)" ? 0.5 : 0;
+          const rowTotal = (item.basePrice + extra) * item.qty;
+
+          return `
+            <div class="cart-row">
+              <div class="cart-row-top">
+                <div class="cart-row-name">${item.name}</div>
+                <div class="cart-row-price">${formatEuro(rowTotal)}</div>
+              </div>
+              <div class="cart-row-controls">
+                ${
+                  item.allowDoughChoice
+                    ? `
+                    <select class="dough-select" data-idx="${idx}" aria-label="Scegli impasto">
+                      <option value="Tradizionale" ${item.dough === "Tradizionale" ? "selected" : ""}>Impasto Tradizionale</option>
+                      <option value="Integrale (+0,50€)" ${item.dough === "Integrale (+0,50€)" ? "selected" : ""}>Integrale (+0,50€)</option>
+                      <option value="Senza lattosio" ${item.dough === "Senza lattosio" ? "selected" : ""}>Senza lattosio</option>
+                    </select>
+                  `
+                    : `<span style="font-size:13px; color:var(--text-muted);">Impasto standard</span>`
+                }
+                <div class="qty-box">
+                  <button type="button" class="qty-btn" data-action="dec" data-idx="${idx}">−</button>
+                  <span style="font-weight:700; min-width:18px; text-align:center;">${item.qty}</span>
+                  <button type="button" class="qty-btn" data-action="inc" data-idx="${idx}">+</button>
+                </div>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      const { total } = getCartTotals();
+      document.getElementById("modalTotalAmount").textContent = formatEuro(total);
+
+      listEl.querySelectorAll(".dough-select").forEach((sel) => {
+        sel.addEventListener("change", () => {
+          const idx = Number(sel.dataset.idx);
+          state.cart[idx].dough = sel.value;
+          saveCart();
+          updateCartIndicators();
+          renderCartModal();
+        });
+      });
+
+      listEl.querySelectorAll(".qty-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const idx = Number(btn.dataset.idx);
+          if (btn.dataset.action === "inc") {
+            state.cart[idx].qty += 1;
+          } else {
+            state.cart[idx].qty -= 1;
+            if (state.cart[idx].qty <= 0) {
+              state.cart.splice(idx, 1);
+            }
+          }
+          saveCart();
+          updateCartIndicators();
+          renderCartModal();
+        });
+      });
+    }
+
+    function openCartModal() {
+      renderCartModal();
+      document.getElementById("cartModal").classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCartModal() {
+      document.getElementById("cartModal").classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    function sendOrderOnWhatsApp() {
+      if (state.cart.length === 0) return;
+
+      const name = document.getElementById("customerName").value.trim();
+      const pickup = document.getElementById("pickupTime").value.trim();
+      const notes = document.getElementById("orderNotes").value.trim();
+      const { total } = getCartTotals();
+
+      const lines = ["Ciao Michela! Vorrei ordinare da *Piadina del Borgo*:", ""];
+
+      state.cart.forEach((item) => {
+        const extra = item.dough === "Integrale (+0,50€)" ? 0.5 : 0;
+        const rowTotal = (item.basePrice + extra) * item.qty;
+        const doughInfo =
+          item.allowDoughChoice && item.dough !== "Tradizionale" ? ` [${item.dough}]` : "";
+        lines.push(`• ${item.qty}x ${item.name}${doughInfo} — ${formatEuro(rowTotal)}`);
+      });
+
+      lines.push("");
+      lines.push(`*Totale stimato:* ${formatEuro(total)}`);
+
+      if (name) lines.push(`*Nome:* ${name}`);
+      if (pickup) lines.push(`*Orario ritiro:* ${pickup}`);
+      if (notes) lines.push(`*Note:* ${notes}`);
+
+      const encoded = encodeURIComponent(lines.join("\n"));
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+      window.location.href = waUrl;
+    }
+
+    // Inizializzazione
+    document.addEventListener("DOMContentLoaded", () => {
+      loadSavedCart();
+      updateCartIndicators();
+      updateLiveStatus();
+      setInterval(updateLiveStatus, 60000);
+      renderCategoryPills();
+      renderMenu();
+
+      const searchInput = document.getElementById("searchInput");
+      const searchClearBtn = document.getElementById("searchClearBtn");
+      const toggleAllBtn = document.getElementById("toggleAllBtn");
+
+      searchInput.addEventListener("input", () => {
+        state.searchQuery = searchInput.value;
+        searchClearBtn.classList.toggle("visible", state.searchQuery.length > 0);
+        renderMenu();
+      });
+
+      searchClearBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        state.searchQuery = "";
+        searchClearBtn.classList.remove("visible");
+        renderMenu();
+        searchInput.focus();
+      });
+
+      toggleAllBtn.addEventListener("click", () => {
+        if (state.searchQuery.trim().length > 0) {
+          searchInput.value = "";
+          state.searchQuery = "";
+          searchClearBtn.classList.remove("visible");
+          state.openCategories.clear();
+          renderMenu();
+          return;
+        }
+
+        const shouldCloseAll = toggleAllBtn.dataset.mode === "close";
+        if (shouldCloseAll) {
+          state.openCategories.clear();
+        } else {
+          getVisibleCategories().forEach((cat) => state.openCategories.add(cat.id));
+        }
+        renderMenu();
+      });
+
+      document.getElementById("headerCartBtn").addEventListener("click", openCartModal);
+      document.getElementById("floatingCartBar").addEventListener("click", openCartModal);
+      document.getElementById("closeModalBtn").addEventListener("click", closeCartModal);
+      document.getElementById("sendWhatsappBtn").addEventListener("click", sendOrderOnWhatsApp);
+
+      document.getElementById("clearCartBtn").addEventListener("click", () => {
+        state.cart = [];
+        saveCart();
+        updateCartIndicators();
+        renderCartModal();
+      });
+
+      document.getElementById("cartModal").addEventListener("click", (e) => {
+        if (e.target.id === "cartModal") {
+          closeCartModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeCartModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
